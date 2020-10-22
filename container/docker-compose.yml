@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+    pop-shell-builder:
+        build: .
+        image: pop-shell-builder
+        container_name: pop-shell-builder
+        network_mode: bridge
+        restart: "no"
+        volumes: 
+            - ../dist:/dist
